@@ -1,2 +1,2 @@
-# Alex-Aviles.github.io
+# alexander-aviles.github.io
 for school work
