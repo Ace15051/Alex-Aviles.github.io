@@ -1,6 +1,6 @@
 html{
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background-color: #4877F8;
 }
 h1 {
@@ -8,8 +8,8 @@ h1 {
     text-align: center;
 }
 p, li {
-    font-size: 16px;
-    line-height: 2;
+    font-size: 1.8em;
+    line-height: 1.6;
     letter-spacing: 1px;
 }
 body {
@@ -20,6 +20,7 @@ body {
     border: 5px solid black;
 }
 h1{
+    font-size: 4.5em;
     margin: 0;
     padding: 20px 0;
     color: #00539F;
@@ -29,4 +30,31 @@ img {
     display: block;
     margin: 0 auto;
     max-width: 100%
+}
+h2 {
+    font-size: 2em;
+}
+a:link {
+    color: #ffffff;   
+}
+a:visited {
+    color: #996600,
+}
+a:hover {
+    color: #99ccff; background-color: #ff00aa; text-decoration: none;
+}
+a:active { 
+    color: #66ff66; background-color: #ff9933; text-decoration: none; }
+header, main {
+    padding: 2.5em
+}
+/* This changes the border backround color for the header element to magneta and makes the text color yellow. Also adds a yellow solid border to the bottom to match the text*/
+header {
+    background-color: #99004d;
+    color: #ffff1a;
+    border-bottom: .3rem solid;
+    border-color: #ffff1a;
+}
+main {
+    max-width: inherit; 
 }
