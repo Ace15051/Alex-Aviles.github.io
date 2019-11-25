@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>
+    <style>
+      html {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+      }
+      body {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 1.9em;
+        padding: 1em;
+      }
+      footer { 
+        border-top: 6px solid #999; 
+        margin-top: 3em;
+        padding-top: 2em;
+      }
+      /* I picked some really awful colors. Curious to see how many of you modify them. */
+      section h1 { 
+        background-color: #f8dea5;
+        padding: .5em;;
+        border-top: 5px solid #995c33;
+        border-radius: 10px;
+        margin-left: -.5em;
+        margin-right: -.5em;
+      }
+      header h1 {
+        background-color: #995c33;
+        color: #ccc;
+        padding: .5em;;
+        border-top: 5px solid #f8dea5;
+        border-radius: 10px;
+        margin-left: -1em;
+        margin-right: -1em;
+      }       
+      header nav ul {
+        list-style-type: none;
+        background-color: #f7c049;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #995c33;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+      }
+      header nav ul li a:hover {
+        background-color: #f8dea5;
+      }
+      #project-plan dt {
+        border-top: 2px solid #000;
+        font-weight: bold;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      #project-plan dd:last-child {
+        border-bottom: 6px solid #000;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        margin-left: inherit;
+        padding-left: 2em;
+      }
+      #development-guide ul li {
+        line-height: 1.5;
+      }
+      ul.structure,
+      ul.structure ul {
+        list-style: none;
+      }
+      ul.structure li.folder:before {
+        content: "\1F4C1";
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-right: 0.5em;
+      }
+      ul.structure li:before {
+        content: "\1f4c4";
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-right: 0.5em;
+      }
+      .colorcontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 1em;
+      }
+      .color-item {
+        border: 1px solid #000;
+        padding: 1em;
+        margin: 0.5em;
+      }
+      .color-chip {
+        width: 100px;
+        height: 100px;
+      }
+      dl.styles-guide dt {
+        font-weight: bold;
+        border-top: 1px dashed #333;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      .code {
+        font-family: "Courier New", Courier, monospace;
+        color: #993333;
+        font-size: 0.9em;
+        margin-left: 2em;
+      }
+      .highlight {
+        background-color: f7c049;
+        font-weight: bold;
+      }
+      img { width: 100%; }
+    </style>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Paw Prints</title>
+  </head>
+<body data-gr-c-s-loaded="true">
+    <header>
+      <h1>Site: Paw Prints</h1>
+      <p>
+        Developer: Alexander Aviles<br>
+        <!-- this will automatically update with the file date; no need to change it-->
+        <span id="modified">Updated: Sunday, November 24, 2019</span>
+        <!--end date section-->
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#project-plan">Project plan</a></li>
+          <li><a href="#development-guide">Development guide</a></li>
+          <li><a href="#design-guide">Design guide</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="project-plan">
+        <h1>Project plan</h1>
+        <dl>
+          <dt>Title</dt>
+          <dd><p>Paw Prints</p></dd>
+
+          <dt>Goal</dt>
+          <dd>
+            <p>
+            This website will introduce people to the doggy daycare and boarding business, wether they have an interest in getting a job there or simply bringing their dog to a kennel like the one I work at. It will also give information about different breeds I have worked with and what some of my favorites are. 
+            </p>
+          </dd>
+          <dt>Target Audience</dt>
+          <dd>
+            <p>
+              The target audience for my website is anyone who is interested in the doggy daycare and boarding business. It is also intended for any dog lovers as they will be able to view pictures of many different breeds and to get a little insight on what I have been doing for the past three years as a dog walker. 
+            </p>
+          </dd>
+          <dt>Main Features</dt>
+          <dd>
+            <p>
+              Web site with links to information, pictures, and stories about my experiences working at the doggy daycare. A gallery of images of different dogs I have worked with around different times of the year. 
+            </p>
+          </dd>
+          <dt>Personality</dt>
+          <dd>
+            <p>My site will have a warm color scheme to make new visitors to the site feel more invited and calm. It is not a professional website or used for business so it will display more of a social conscience, and it will change over time as more pictures can be added and I will be able to add onto the blog as I have more experiences to talk about. I would like the person to feel inclined to return to the website after viewing it, and to feel like they got some insight on the doggy daycare and boarding business.</p>
+          </dd>
+          <dt>Limiting Factors</dt>
+          <dd>
+            <p>
+              One of my limiting factors is my inexperience with Javascript, I will need to look more into the integration of it with webpages. Time is another constraint as I don't have an endless amount to work on this project. I will be working with photos I have taken so I am hoping there will be enough. 
+            </p>
+          </dd>
+        </dl>
+      </section>
+      <section id="development-guide">
+        <h1>Development guide</h1>
+        <h2>Site structure</h2>
+        <ul>
+          <li>
+            Root Directory
+            <ul>
+              <li>images directory – contains jpgs and gifs</li>
+              <li>styles directory – contains all of the style sheets</li>
+              <li>
+                index.html – home page for site, site purpose and overview
+              </li>
+              <li>
+                photos.html - gallery of images of different dogs that go to my work.
+              </li>
+              <li>
+                Favorites.html - gallery of images of my favorite dogs at work and information about them and the corresponding breed that they are.
+              </li>
+              <li>
+                blog.html - information about when I started working at the doggy daycare and different stories about my experiences.
+              </li>
+              <li>
+                about.html - general information about pricing and how to get started/prepared for taking your dog to daycare/boarding. 
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>Visual representation of site structure</h2>
+        <ul class="structure">
+          <!-- displays as page icon unless you use class="folder" -->
+          <li class="folder">
+            Root Directory
+            <ul>
+              <li class="folder">images directory – contains jpgs and gifs</li>
+              <li class="folder">
+                styles directory – contains all of the style sheets
+              <li>
+                index.html – home page for site, site purpose and overview
+              </li>
+              <li>
+                 photos.html - gallery of images of different dogs that go to my work.
+              </li>
+              <li>
+                Favorites.html - gallery of images of my favorite dogs at work and information about them and the corresponding breed that they are.
+              </li>
+              <li>
+                blog.html - information about when I started working at the doggy daycare and different stories about my experiences.
+              </li>
+              <li>
+                about.html - general information about pricing and how to get started/prepared for taking your dog to daycare/boarding.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>Navigation elements</h2>
+        <p>
+          Navigation – There is a navigation bar on <span class="highlight">top</span> that links to all pages in the site.
+        </p>
+        <p>
+          Some pictures will link to a different page that is appropriate 
+        </p>
+        <h3>Navigation structure</h3>
+        <ul>
+          <li>Home</li>
+          <li>
+            photos.html - gallery of images of different dogs that go to my work.
+            <ul>
+              <li>
+                No links to a different website
+              </li>
+            </ul>
+          </li>
+          <li>
+            Favorites.html - gallery of images of my favorite dogs at work and information about them and the corresponding breed that they are.
+            <ul>
+              <li>
+                  No links to another website
+              </li>
+            </ul>
+          </li>
+          <li>
+              blog.html - information about when I started working at the doggy daycare and different stories about my experiences.
+              <ul>
+                <li>
+                   No links to another website
+                </li>
+              </ul>
+            </li>
+            <li>
+                 about.html - general information about pricing and how to get started/prepared for taking your dog to daycare/boarding.
+                <ul>
+                  <li>
+                     At least 1 link to another webstie
+                  </li>
+                </ul>
+              </li>
+        </ul>
+        <h2>HTML template</h2>
+        <p>
+          I will be basing my pages on <span class="highlight">(link to your own example template, will add this as soon as available)</span> 
+        </p>
+        <h2>Wireframe site</h2>
+        <p>
+            <span class="highlight">These wireframes</span> let you navigate
+          the basic structure of my site.
+        </p>
+      </section>
+      <section id="design-guide">
+        <h1>Design guide</h1>
+        <h2>Color Palette</h2>
+        <p>
+          The following is the list of colors that may be used. Tints or changes
+          in opacity may also be used as long as they compliment each other.
+        </p>
+        <p><span class="highlight">Replace the color values with your own colors. Leave the rest of the code alone unless you really want to recode it.</span></p>
+        <div class="colorcontainer">
+          <div class="color-item">
+            <p>Orange</p>
+            <p>#c76b28</p>
+            <div class="color-chip" style="background-color: #c76b28"></div>
+          </div>
+          <div class="color-item">
+            <p>Gray-Blue</p>
+            <p>#4b787f</p>
+            <div class="color-chip" style="background-color: #4b787f"></div>
+          </div>
+          <div class="color-item">
+            <p>Light Yellow</p>
+            <p>#e7e570</p>
+            <div class="color-chip" style="background-color: #e7e570"></div>
+          </div>
+          <div class="color-item">
+            <p>Red</p>
+            <p>#7d1a25</p>
+            <div class="color-chip" style="background-color: #7d1a25"></div>
+          </div>
+          <div class="color-item">
+            <p>Blue</p>
+            <p>#023972</p>
+            <div class="color-chip" style="background-color: #023972"></div>
+          </div>
+        </div>
+
+        <h2>Media assets</h2>
+        <h3>General Guidelines</h3>
+        <ul>
+          <li>
+            <p><span class="highlight">Example text:</span> Images optimized as JPG using the Photoshop save for web feature to
+            determine the best choice. Photos generally saved as JPG.</p>
+            <p>Ruface.jpg, Stella.jpg, Kolbie.jpg, Po.jpg</p>
+          </li>
+          <li>My own photos and images</li>
+        </ul>
+        <h2>Styles guide 
+          <span class="highlight">
+            (Change this content so it matches your own plan, not mine)
+        </span>
+      </h2>
+        <dl class="styles-guide">
+          <dt>Background</dt>
+          <dd>
+            <p>Background is Orange</p>
+            <p class="code">{background-color: #c76b28}</p>
+          </dd>
+          <dt>Default font</dt>
+          <dd>
+            <p>Text is Gray-Blue, 10 pixels</p>
+            <p class="code">p { font-size: 10px; color: #4b787f;}</p>
+          </dd>
+          <dt>Header</dt>
+          <dd>
+            <p>
+              The header section is 23.5 em tall, positioned along the top of each page. The background is Red.
+            </p>
+            <p class="code">
+              header { <br>height: 23.5em; <br>background-color: #7d1a25; <br>
+                }</p>
+          </dd>
+          <dt>Navigation</dt>
+          <dd>
+            <p>
+                The main navigation is 12em tall, positioned just below the header with a 
+                background color of Light Yellow and Gray-Blue font color.
+            </p>
+            <p class="code">
+              nav { height: 12em; background-color: #e7e570; color: #4b787f; }
+            </p>
+          </dd>
+          <dt>Images</dt>
+          <dd>
+            <p>
+              Images will be over blue background with a grey border
+              around the container
+            </p>
+            <p class="code">
+              figure { background-color: #023972; border: 2px solid #333333; }
+            </p>
+            <p class="code">img { padding: 1em; }</p>
+          </dd>
+          <dt>Links</dt>
+          <dd>
+            <p>
+              Links will be burgundy. On hover, they will have a light blue
+              background and a blue border.</p>
+            <p></p>
+            <p class="code">a { color: #993333 }</p>
+            <p class="code">a:hover { background-color: #6699CC; border 2px dotted #336699; }</p>
+          </dd>
+        </dl>
+        <h2>Layout sketch</h2>
+        <img src="layout.png" alt="Site layout sketch; will add this as soon as available">
+      </section>
+    </main>
+    <footer>
+      ©Alexander Aviles
+    </footer>
+    <!-- Enable includes -->
+    <script src="../scripts/includes.js"></script>
+
+    <!-- Script below includes file date update -->
+
+    <script>
+      includeHTML();
+      // get last updated date as a new date object
+      var modDate = new Date(document.lastModified);
+      // set up some formatting options
+      var options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      };
+      // format it
+      var modDateString = modDate.toLocaleDateString("en-US", options);
+      // display it in the document
+      document.getElementById("modified").innerHTML =
+        "Updated: " + modDateString;
+    </script>
+  
+
+</body>

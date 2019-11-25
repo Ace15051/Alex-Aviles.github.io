@@ -1,0 +1,78 @@
+html{
+    font-size: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #4877F8;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+p, li {
+    font-size: 1.8em;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+h1{
+    font-size: 4.5em;
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%
+}
+h2 {
+    font-size: 2em;
+}
+a:link {
+    color: #ffffff;   
+}
+a:visited {
+    color: #996600,
+}
+a:hover {
+    color: #99ccff; background-color: #ff00aa; text-decoration: none;
+}
+a:active { 
+    color: #66ff66; background-color: #ff9933; text-decoration: none; }
+header, main {
+    padding: 2.5em
+}
+/* This changes the border backround color for the header element to magneta and makes the text color yellow. Also adds a yellow solid border to the bottom to match the text*/
+header {
+    background-color: #99004d;
+    color: #ffff1a;
+    border-bottom: .3rem solid;
+    border-color: #ffff1a;
+}
+main {
+    max-width: inherit;
+}
+Footer {
+   background-color: #13c5cf;
+   text-align: center;
+   margin-left: 21rem;
+   margin-right: 21rem;
+   padding: 0em;
+   font-family: TimesNewRoman, Helvetica, sans-serif;
+}
+Section {
+    background-color: #1ba2e0;
+    color: #ffffff;
+    padding: .5em;
+    font-family: Garamond, Helvetica, sans-serif;   
+}
+Aside {
+    background-color: #e3c54b;
+    color: #29a32f;   
+}
