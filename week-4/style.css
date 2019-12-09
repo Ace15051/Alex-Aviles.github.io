@@ -66,13 +66,29 @@ Footer {
    padding: 0em;
    font-family: TimesNewRoman, Helvetica, sans-serif;
 }
+/* this changes the backround color of the section container to blue and the font color to white */
 Section {
     background-color: #1ba2e0;
     color: #ffffff;
     padding: .5em;
     font-family: Garamond, Helvetica, sans-serif;   
 }
+/* this changes the backround color of any aside container to yellow and the font color to green, also adds a black border to the container */
 Aside {
     background-color: #e3c54b;
-    color: #29a32f;   
+    color: #29a32f;
+    border: 1em solid black;
+}
+/* this changes the navigation of the site to horizontal, also gives the links a backround color of cadet blue and a blaxk border along with some padding to space them out */ 
+header nav ul li {
+    display: inline;
+    background-color: cadetblue;
+    padding: 8px;
+    border: solid black;
+}
+header nav ul {
+    display: inline;
+}
+figcaption {
+    float: right;
 }
