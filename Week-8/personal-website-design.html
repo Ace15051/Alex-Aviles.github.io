@@ -18,18 +18,18 @@
       }
       /* I picked some really awful colors. Curious to see how many of you modify them. */
       section h1 { 
-        background-color: #f8dea5;
+        background-color: #4b787f;
         padding: .5em;;
-        border-top: 5px solid #995c33;
+        border-top: 5px solid #11708a;
         border-radius: 10px;
         margin-left: -.5em;
         margin-right: -.5em;
       }
       header h1 {
-        background-color: #995c33;
+        background-color: #4b787f;
         color: #ccc;
         padding: .5em;;
-        border-top: 5px solid #f8dea5;
+        border-top: 5px solid #11708a;
         border-radius: 10px;
         margin-left: -1em;
         margin-right: -1em;
@@ -148,24 +148,24 @@
           <dt>Goal</dt>
           <dd>
             <p>
-            This website will introduce people to the doggy daycare and boarding business, wether they have an interest in getting a job there or simply bringing their dog to a kennel like the one I work at. It will also give information about different breeds I have worked with and what some of my favorites are. 
+            This website will introduce people to the doggy daycare and boarding business, wether they have an interest in getting a job there or simply bringing their dog to a kennel like the one I work at. It will include a blog page that talks about my experience working throughout the different seasons. It will also have a photo gallery page that showcases some of the dogs I get the priviledge of watching. 
             </p>
           </dd>
           <dt>Target Audience</dt>
           <dd>
             <p>
-              The target audience for my website is anyone who is interested in the doggy daycare and boarding business. It is also intended for any dog lovers as they will be able to view pictures of many different breeds and to get a little insight on what I have been doing for the past three years as a dog walker. 
+              The target audience for my website is anyone who is interested in the doggy daycare and boarding business. It is also intended for any dog lovers as they will be able to see pictures of many different breeds of dogs. The audience will also get a little insight on how it's been working as a dog walker. 
             </p>
           </dd>
           <dt>Main Features</dt>
           <dd>
             <p>
-              Web site with links to information, pictures, and stories about my experiences working at the doggy daycare. A gallery of images of different dogs I have worked with around different times of the year. 
+              A homepage that tells the purpose of the site clearly. A blog page with information about working during the different seasons of the year. A gallery of images of different dogs I have worked with around different times of the year. 
             </p>
           </dd>
           <dt>Personality</dt>
           <dd>
-            <p>My site will have a warm color scheme to make new visitors to the site feel more invited and calm. It is not a professional website or used for business so it will display more of a social conscience, and it will change over time as more pictures can be added and I will be able to add onto the blog as I have more experiences to talk about. I would like the person to feel inclined to return to the website after viewing it, and to feel like they got some insight on the doggy daycare and boarding business.</p>
+            <p>My site will have a cold color scheme to make new visitors to the site feel more invited and calm. It is not a professional website or used for business so it will display more of a social conscience, and it will change over time as more pictures can be added and I will be able to add onto the blog as I have more experiences to talk about. I would like the person to feel inclined to return to the website after viewing it, and to feel like they got some insight on the doggy daycare and boarding business.</p>
           </dd>
           <dt>Limiting Factors</dt>
           <dd>
@@ -182,8 +182,9 @@
           <li>
             Root Directory
             <ul>
-              <li>images directory – contains jpgs and gifs</li>
+              <li>images directory – contains jpgs</li>
               <li>styles directory – contains all of the style sheets</li>
+              <li>scripts directory - will contain future scripts </li>
               <li>
                 index.html – home page for site, site purpose and overview
               </li>
@@ -191,18 +192,11 @@
                 photos.html - gallery of images of different dogs that go to my work.
               </li>
               <li>
-                Favorites.html - gallery of images of my favorite dogs at work and information about them and the corresponding breed that they are.
-              </li>
-              <li>
                 blog.html - information about when I started working at the doggy daycare and different stories about my experiences.
-              </li>
-              <li>
-                about.html - general information about pricing and how to get started/prepared for taking your dog to daycare/boarding. 
               </li>
             </ul>
           </li>
         </ul>
-
         <h2>Visual representation of site structure</h2>
         <ul class="structure">
           <!-- displays as page icon unless you use class="folder" -->
@@ -210,6 +204,7 @@
             Root Directory
             <ul>
               <li class="folder">images directory – contains jpgs and gifs</li>
+              <li class="folder">scripts directory - will contain scripts</li>  
               <li class="folder">
                 styles directory – contains all of the style sheets
               <li>
@@ -219,23 +214,14 @@
                  photos.html - gallery of images of different dogs that go to my work.
               </li>
               <li>
-                Favorites.html - gallery of images of my favorite dogs at work and information about them and the corresponding breed that they are.
-              </li>
-              <li>
                 blog.html - information about when I started working at the doggy daycare and different stories about my experiences.
-              </li>
-              <li>
-                about.html - general information about pricing and how to get started/prepared for taking your dog to daycare/boarding.
               </li>
             </ul>
           </li>
         </ul>
         <h2>Navigation elements</h2>
         <p>
-          Navigation – There is a navigation bar on <span class="highlight">top</span> that links to all pages in the site.
-        </p>
-        <p>
-          Some pictures will link to a different page that is appropriate 
+          Navigation – There is a horizontal navigation bar on <span class="highlight">top</span> that links to all pages in the site.
         </p>
         <h3>Navigation structure</h3>
         <ul>
@@ -249,14 +235,6 @@
             </ul>
           </li>
           <li>
-            Favorites.html - gallery of images of my favorite dogs at work and information about them and the corresponding breed that they are.
-            <ul>
-              <li>
-                  No links to another website
-              </li>
-            </ul>
-          </li>
-          <li>
               blog.html - information about when I started working at the doggy daycare and different stories about my experiences.
               <ul>
                 <li>
@@ -264,14 +242,6 @@
                 </li>
               </ul>
             </li>
-            <li>
-                 about.html - general information about pricing and how to get started/prepared for taking your dog to daycare/boarding.
-                <ul>
-                  <li>
-                     At least 1 link to another webstie
-                  </li>
-                </ul>
-              </li>
         </ul>
         <h2>HTML template</h2>
         <p>
@@ -308,9 +278,9 @@
             <div class="color-chip" style="background-color: #e7e570"></div>
           </div>
           <div class="color-item">
-            <p>Red</p>
-            <p>#7d1a25</p>
-            <div class="color-chip" style="background-color: #7d1a25"></div>
+            <p>Gray</p>
+            <p>#7d7d7d</p>
+            <div class="color-chip" style="background-color: #7d7d7d"></div>
           </div>
           <div class="color-item">
             <p>Blue</p>
@@ -323,9 +293,8 @@
         <h3>General Guidelines</h3>
         <ul>
           <li>
-            <p><span class="highlight">Example text:</span> Images optimized as JPG using the Photoshop save for web feature to
-            determine the best choice. Photos generally saved as JPG.</p>
-            <p>Ruface.jpg, Stella.jpg, Kolbie.jpg, Po.jpg</p>
+            <p><span class="highlight">Example text:</span> Images optimized as JPG using Picresize.com to make all the images 1200x1200.</p>
+            <p>bandit-1200w.jpg, buster-saint-bernard.jpg, duke-chocolate-lab-bright-1200w.jpg, elegant-ruface-1200w.jpg, jax-and-cooper-1200w.jpg,jax-and-duke-1200w.jpg, kona-alaskan-husky-1200w.jpg, paw-prints-homepage-1200w.jpg, ruface-in-the-stump-1200w.jpg,stella-leonberger-1200w.jpg, tilly-australian-shephard-1200w.jpg, timber-1200w.jpg, two-golden-retrievers.jpg, unsuspecting-sheriff-1200w.jpg</p>
           </li>
           <li>My own photos and images</li>
         </ul>
@@ -337,18 +306,18 @@
         <dl class="styles-guide">
           <dt>Background</dt>
           <dd>
-            <p>Background is Orange</p>
-            <p class="code">{background-color: #c76b28}</p>
+            <p>Background is Gray-Blue</p>
+            <p class="code">{background-color: #4b787f}</p>
           </dd>
           <dt>Default font</dt>
           <dd>
-            <p>Text is Gray-Blue, 10 pixels</p>
-            <p class="code">p { font-size: 10px; color: #4b787f;}</p>
+            <p>Text is black, 10 pixels</p>
+            <p class="code">p { font-size: 10px; color: #000;}</p>
           </dd>
           <dt>Header</dt>
           <dd>
             <p>
-              The header section is 23.5 em tall, positioned along the top of each page. The background is Red.
+              The header section is 5 rem tall and 18 rem wide, positioned along the top of each page. The background is Orange.
             </p>
             <p class="code">
               header { <br>height: 23.5em; <br>background-color: #7d1a25; <br>
@@ -357,18 +326,14 @@
           <dt>Navigation</dt>
           <dd>
             <p>
-                The main navigation is 12em tall, positioned just below the header with a 
-                background color of Light Yellow and Gray-Blue font color.
-            </p>
-            <p class="code">
-              nav { height: 12em; background-color: #e7e570; color: #4b787f; }
+                The main navigation is 5rem tall and 18rem wide, positioned just below the header with a 
+                background color of blue, there will be a "current" class that shows the user which page they are on. The links will change color on hover and get an underlining text deciration, as well as when they activate the link.
             </p>
           </dd>
           <dt>Images</dt>
           <dd>
             <p>
-              Images will be over blue background with a grey border
-              around the container
+              images will be uniformly 1200x1200 to be consistent throughout the site, 
             </p>
             <p class="code">
               figure { background-color: #023972; border: 2px solid #333333; }
