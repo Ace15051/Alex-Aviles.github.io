@@ -1,0 +1,89 @@
+/*this will be the formatting style sheet that provides colors to the site */
+html {
+    font-size:10px;
+    background-color: #4b787f;
+}
+body {
+    margin: 0;
+}
+h1 {
+    font-size: 12rem;
+    text-align: center;
+    font-family: Garamond, Times, serif;
+}
+/* sets the font size for links */
+ul li a {
+    font-size: 4rem;
+}
+/* sets the font size for h2, aligns the text to the center, and gives 1rem of padding to the top and bottom.*/ 
+h2 {
+    font-size: 7rem;
+    text-align: center;
+    margin: 1rem 0rem;
+    font-family: Times New Roman, Times, serif;
+}
+/*sets the font size for the paragraph tags and also the font family */
+p {
+    font-size: 1.8rem;
+    font-family: arial, Verdana, sans-serif;
+}
+/*aligns the text in h3 to the center and sets font size and family */
+h3 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: Times New Roman, Times, serif;
+}
+header nav ul li {
+    width: 18rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+#sitelogo {
+    line-height: 100px;
+    margin: 0;
+    padding: 2rem 0rem;
+}
+#mainnav {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin: 1rem;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#sitepurpose {
+    padding: 0;
+    margin: 1rem 15rem;
+    background-color: #11708a;
+    text-align: center;
+    font-size: 2rem;
+    font-family: arial, Verdana, sans-serif;
+}
+nav {
+    margin-top: 0;
+    font-family: Times New Roman, Times, serif;
+}
+.details {
+   padding: 0;
+    margin: 1rem 15rem;
+    background-color: #e7e570;
+    text-align: center;
+    border: solid .5em;
+    border-color: #11708a; 
+}
+footer {
+    text-align: center;
+    background-color: #c76b28;
+    margin: 1rem 0rem;
+    padding: 0rem;
+}
+.current {
+    background-color: #7d7d7d;
+    text-decoration: underline;
+}

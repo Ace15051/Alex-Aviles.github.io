@@ -1,0 +1,28 @@
+figcaption {
+    text-align: center;
+}
+.center {
+    display: block;
+    border: solid 1rem #000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 1em;
+}
+header nav ul li {
+    display: inline-block;
+    background-color: #023972;
+    border: solid .3rem #000;
+}
+#sitelogo {
+    background: #c76b28;
+}
+.seasons {
+    padding: 0;
+    margin: 1rem 15rem;
+    background-color: #11708a;
+    text-align: center;
+    font-size: 2rem;
+    font-family: arial, Verdana, sans-serif;
+    border: solid .5rem #e7e570;
+}

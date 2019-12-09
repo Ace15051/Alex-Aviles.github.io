@@ -1,0 +1,15 @@
+nav ul li a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #e7e570;
+}
+nav ul li:hover {
+    background-color: darkorange;
+}
+nav ul li a:active {
+    color: white;
+    text-decoration-color: white;
+}
+nav ul li:active {
+    background-color: gray;
+}
